@@ -1,6 +1,11 @@
 # Docker-Dashboard
 Docker-Dashboard</br>
 Note : </br>
+Install following prerequsit to run this app
+</br>
+Install docker by using below url:
+</br>
+https://docs.docker.com/engine/installation/linux/ubuntulinux/</br>
 $ pip install docker-py </br>
 $ sudo pip install Flask</br>
 
@@ -10,7 +15,7 @@ Id : admin@gmail.com</br>
 Pass: admin
 </br>
 download the zip:
-</br></br>
+</br>
 https://github.com/ajinkyamhatre/Docker-Dashboard/archive/master.zip
 </br></br>
  
@@ -18,7 +23,7 @@ https://github.com/ajinkyamhatre/Docker-Dashboard/archive/master.zip
 cd /Docker-Dashboard-master
 </br>
 mkdir templates </br>
-copy login.html & admin.html -> templates</br></br></br>
+copy login.html & admin.html -> templates</br></br>
 
  
 
