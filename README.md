@@ -1,6 +1,7 @@
 # Docker-Dashboard
 Docker-Dashboard</br>
 Note : </br>
+$ sudo pip install Flask</br>
 $ mkdir templates </br>
 $ cpy login.html & admin.html -> templates</br>
 To run Server : python user.py</br>
