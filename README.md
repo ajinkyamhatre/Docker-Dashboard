@@ -30,7 +30,7 @@ app.run(‘<ip>’,8080,debug=True)
 
  </br>
 
-and use url http://<ip>:8080/login
+and use url http://[ip]:8080/login
 
  
 
