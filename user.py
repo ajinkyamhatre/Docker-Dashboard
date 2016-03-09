@@ -1,10 +1,8 @@
 from mydocker import myadd ,containers_list ,images_list,memory,remove,start,stop,create_container,test,network
-from pymongo import Connection
+
 import subprocess
 from flask import *
-con=Connection()
-db=con.user_database
-user_db=db.myuser
+
 app=Flask(__name__)
 app.secret_key = 'my key'
 
@@ -97,5 +95,4 @@ def mytest():
 
 if __name__=="__main__":
         app.run('localhost',8080,debug=True)
-
 
