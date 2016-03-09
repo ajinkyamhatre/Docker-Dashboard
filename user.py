@@ -83,7 +83,13 @@ def network_admin():
 def logout():
 	session['logged_in']=False
 	return redirect(url_for('myrequest'))
+@app.route('/')
+def first():
+	session['logged_in']=False
+	return redirect(url_for('myrequest'))
 
+
+#route for testing
 @app.route('/test')
 def mytest():
 	f=''
@@ -95,4 +101,3 @@ def mytest():
 
 if __name__=="__main__":
         app.run('localhost',8080,debug=True)
-
