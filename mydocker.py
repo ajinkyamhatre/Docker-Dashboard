@@ -1,16 +1,23 @@
 from docker import Client
-cli = Client(base_url='unix://var/run/docker.sock')
+
+connection = Client(base_url='unix://var/run/docker.sock')
+
+
 def containers_list(running):
-	if running:
-		lst=cli.containers()
-		return lst
-	else:
-		lst=cli.containers(all=True)
-		return lst
+    if running:
+        return connection.containers()
+    else:
+        lst = connection.containers(all=True)
+
+
 def images_list():
-	return cli.images()
-def myadd():
-	return cli.info()
+    return connection.images()
+
+
+def docker_info():
+    return connection.info()
+
+
 def memory():
     """
     Get node total memory and memory usage
@@ -27,16 +34,27 @@ def memory():
         ret['free'] = tmp
         ret['used'] = int(ret['total']) - int(ret['free'])
     return ret
-def remove(mycont):
-	cli.remove_container(mycont)
-def start(mycont):
-	cli.start(mycont)
-def stop(mycont):
-	cli.stop(mycont)
-def create_container(image,command,name):
-	cli.create_container(image=image,command=command,name=name)
-def test():
-	return cli.networks()
-def network():
-	return cli.networks()
 
+
+def remove(mycont):
+    connection.remove_container(mycont)
+
+
+def start(mycont):
+    connection.start(mycont)
+
+
+def stop(mycont):
+    connection.stop(mycont)
+
+
+def create_container(image, command, name):
+    connection.create_container(image=image, command=command, name=name)
+
+
+def test():
+    return connection.networks()
+
+
+def network():
+    return connection.networks()
