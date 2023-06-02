@@ -32,7 +32,11 @@ otherwise if u are running this code locally don’t change Docker-Dashboard/blo
 </br>
 and access url is <bold>http://localhost:8080/login</bold>
 </br>
-<h3>To run Server :</h3> $ ./runapp.sh</br>
+<h3>To run Server :</h3> 
+
+```
+./runapp.sh
+```
 <h3>Login :</h3></br>
 <h4>Id :</h4> admin@gmail.com</br>
 <h4>Pass:</h4> admin
