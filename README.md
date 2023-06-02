@@ -24,7 +24,7 @@ https://github.com/ajinkyamhatre/Docker-Dashboard/archive/master.zip
 
 if you are using this dashboard remotely change the ip in Docker-Dashboard/blob/master/user.py in below line
 </br>
-app.run(‘<bold>[ip]</bold>’,8080,debug=True)
+`app.run(‘<bold>[ip]</bold>’,8080,debug=True)`
  </br>
 and use url http://<bold>[ip]</bold>:8080/login
 </br>
