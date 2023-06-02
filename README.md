@@ -6,8 +6,16 @@ Install following prerequsit to run this app
 Install docker url:
 </br>
 https://docs.docker.com/engine/installation/linux/ubuntulinux/</br>
-$ pip install docker-py </br>
-$ sudo pip install Flask</br>
+
+Install python dependencies with pip:
+
+```
+pip install docker-py 
+```
+
+```
+sudo pip install Flask
+```
 
 download the zip:
 </br>
