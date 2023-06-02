@@ -22,13 +22,13 @@ download the zip:
 https://github.com/ajinkyamhatre/Docker-Dashboard/archive/master.zip
 </br></br>
 
-if you are using this dashboard remotely change the ip in Docker-Dashboard/blob/master/user.py in below line
+if you are using this dashboard remotely change the ip in Docker-Dashboard/user.py in below line
 </br>
 `app.run(‘[ip]’,8080,debug=True)`
  </br>
 and use url `http://<bold>[ip]</bold>:8080/login`
 </br>
-otherwise if u are running this code locally don’t change Docker-Dashboard/blob/master/user.py file
+otherwise if you are running this code locally, don’t change Docker-Dashboard/user.py file
 </br>
 and access url is <bold>http://localhost:8080/login</bold>
 </br>
