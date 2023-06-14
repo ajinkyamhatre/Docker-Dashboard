@@ -7,7 +7,7 @@ def containers_list(running):
     if running:
         return connection.containers()
     else:
-        lst = connection.containers(all=True)
+        return connection.containers(all=True)
 
 
 def images_list():
